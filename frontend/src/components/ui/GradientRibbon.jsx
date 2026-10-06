@@ -27,8 +27,8 @@ export const GradientRibbon = ({ className = '', title = 'Brand gradient ribbon'
         <stop offset="100%" stopColor="#bdbbff" stopOpacity="0" />
       </radialGradient>
 
-      <filter id="ribbonBlurSoft" x="-30%" y="-30%" width="160%" height="160%">
-        <feGaussianBlur stdDeviation="26" />
+      <filter id="ribbonBlurSoft" x="-30%" y="-30%" width="80%" height="80%">
+        <feGaussianBlur stdDeviation="12" />
       </filter>
 
       <filter id="ribbonBlurTight" x="-20%" y="-20%" width="140%" height="140%">

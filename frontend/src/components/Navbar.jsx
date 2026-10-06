@@ -86,11 +86,6 @@ export const Navbar = ({ onToggleMenu }) => {
               <Link to="/courses" className={linkClass('/courses')}>
                 Explore Courses
               </Link>
-              {isAuthenticated && (
-                <Link to={getDashboardPath()} className={linkClass(getDashboardPath())}>
-                  Dashboard
-                </Link>
-              )}
               {isAuthenticated && role === ROLES.INSTRUCTOR && (
                 <Link
                   to="/instructor/courses/new"

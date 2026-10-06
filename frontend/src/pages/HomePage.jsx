@@ -142,7 +142,7 @@ export const HomePage = () => {
             </div>
 
             {/* Signature three-stop gradient ribbon — hero scale only */}
-            <div className="relative mx-auto w-full max-w-[560px] lg:max-w-none">
+            <div className="relative mx-auto w-full max-w-800 max-h-800 lg:max-w-700">
               <GradientRibbon />
             </div>
           </div>
