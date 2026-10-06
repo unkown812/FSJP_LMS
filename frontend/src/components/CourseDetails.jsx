@@ -7,11 +7,13 @@ import {
   CheckCircleOutlined,
   MessageOutlined,
   StarOutlined,
+  CodeOutlined,
 } from '@ant-design/icons';
 import EnrollmentButton from './EnrollmentButton';
 import ProgressBar from './ProgressBar';
 import DiscussionList from './DiscussionList';
 import FeedbackForm from './FeedbackForm';
+import CoursePracticeTab from './practice/CoursePracticeTab';
 import LoadingState from './common/LoadingState';
 import ErrorState from './common/ErrorState';
 import EmptyState from './common/EmptyState';
@@ -198,6 +200,15 @@ export const CourseDetails = ({ courseId: propCourseId }) => {
       children: assessmentsTab,
     },
     {
+      key: 'practice',
+      label: (
+        <span>
+          <CodeOutlined /> Practice
+        </span>
+      ),
+      children: <CoursePracticeTab courseId={course.id} />,
+    },
+    {
       key: 'discussions',
       label: (
         <span>
@@ -283,6 +294,11 @@ export const CourseDetails = ({ courseId: propCourseId }) => {
                     </Button>
                   </Link>
                 )}
+                <Link to={`/courses/${course.id}/practice`}>
+                  <Button size="large" className="btn-ghost-dark" icon={<CodeOutlined />}>
+                    Practice
+                  </Button>
+                </Link>
               </div>
             </div>
 

@@ -30,6 +30,10 @@ const COLUMNS = [
       { label: 'Create account', to: '/register' },
     ],
   },
+  {
+    heading: 'Practice',
+    links: [{ label: 'Coding practice', to: '/practice' }],
+  },
 ];
 
 export const Footer = ({ showSidebar = true }) => {
@@ -45,7 +49,7 @@ export const Footer = ({ showSidebar = true }) => {
   return (
     <footer className="border-t border-hairline bg-canvas no-print">
       <div className="container-app py-14 lg:py-section">
-        <div className="grid grid-cols-2 gap-10 md:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-5 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2.5" aria-label="LMS Portal home">
