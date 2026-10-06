@@ -14,18 +14,20 @@ const COLUMNS = [
     ],
   },
   {
-    heading: 'Teach',
+    heading: 'Profile',
     links: [
-      { label: 'Instructor hub', to: '/instructor' },
-      { label: 'Create a course', to: '/instructor/courses/new' },
+      { label: 'My profile', to: '/profile' },
+      { label: 'My enrollments', to: '/learner/enrollments' },
+      { label: 'My progress', to: '/learner/progress' },
     ],
   },
   {
-    heading: 'Admin',
+    heading: 'Account',
     links: [
-      { label: 'Platform command', to: '/admin' },
-      { label: 'Manage users', to: '/admin/users' },
-      { label: 'Categories', to: '/admin/categories' },
+      { label: 'My profile', to: '/profile' },
+      { label: 'Settings', to: '/settings' },
+      { label: 'Sign in', to: '/login' },
+      { label: 'Create account', to: '/register' },
     ],
   },
 ];
@@ -50,7 +52,7 @@ export const Footer = ({ showSidebar = true }) => {
               <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary text-on-primary text-sm">
                 ◆
               </span>
-              <span className="text-body-md-strong tracking-[-0.02em] text-ink">lms.portal</span>
+              <span className="text-body-md-strong tracking-[-0.02em] text-ink">Edvanta</span>
             </Link>
             <p className="mt-4 max-w-xs text-caption text-body">
               Structured courses, rigorous assessment and verified certificates for learners,
@@ -76,36 +78,13 @@ export const Footer = ({ showSidebar = true }) => {
             </nav>
           ))}
         </div>
-
-        {/* Account / legal row */}
-        <div className="mt-14 flex flex-col gap-4 border-t border-hairline pt-8 md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            {accountLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-caption text-body transition-colors hover:text-ink"
-              >
-                {link.label}
-              </Link>
-            ))}
-            {isAuthenticated && role === ROLES.LEARNER && (
-              <button
-                type="button"
-                onClick={() => logout()}
-                className="text-caption text-body transition-colors hover:text-ink"
-              >
-                Log out
-              </button>
-            )}
-          </div>
-          <p className="text-caption text-body">© 2026 lms.portal</p>
-        </div>
+        
       </div>
 
       {/* Giant wordmark sign-off — the closing slide */}
       <div className="border-t border-hairline">
         <WordmarkBanner />
+        <p className="text-caption text-body md:flex-row md:items-center md:justify-between">© 2026 Edvanta</p>
       </div>
     </footer>
   );

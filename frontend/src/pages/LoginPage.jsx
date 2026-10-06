@@ -75,7 +75,7 @@ export const LoginPage = () => {
           <div className="card w-full max-w-[520px] justify-self-center lg:justify-self-end">
             <div className="card-pad-lg">
               <p className="eyebrow">Account access</p>
-              <h2 className="mt-3 text-display-lg text-ink">Log in to lms.portal</h2>
+              <h2 className="mt-3 text-display-lg text-ink">Log in to Edvanta</h2>
 
               {errorMessage && (
                 <Alert

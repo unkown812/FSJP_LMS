@@ -85,7 +85,7 @@ export const StatTile = ({
 );
 
 /* ------------------------------------------------------- Wordmark sign-off */
-export const WordmarkBanner = ({ wordmark = 'lms.portal', className = '' }) => (
+export const WordmarkBanner = ({ wordmark = 'Edvanta', className = '' }) => (
   <div className={`wordmark-banner ${className}`} aria-hidden="true">
     <span>{wordmark}</span>
   </div>

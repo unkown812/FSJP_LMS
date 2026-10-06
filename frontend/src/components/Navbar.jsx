@@ -78,7 +78,7 @@ export const Navbar = ({ onToggleMenu }) => {
               <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary text-on-primary">
                 <DashboardOutlined />
               </span>
-              <span className="text-body-md-strong tracking-[-0.02em] text-ink">lms.portal</span>
+              <span className="text-body-md-strong tracking-[-0.02em] text-ink">Edvanta</span>
             </Link>
 
             {/* Desktop link row */}
