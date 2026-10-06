@@ -58,7 +58,7 @@ export const Navbar = ({ onToggleMenu }) => {
     }`;
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-hairline bg-canvas no-print">
+    <header className="sticky top-0 z-40 w-full bg-blur no-print">
       <div className="container-app">
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Left: menu trigger + wordmark */}
@@ -75,10 +75,11 @@ export const Navbar = ({ onToggleMenu }) => {
             )}
 
             <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="LMS Portal home">
-              <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary text-on-primary">
-                <DashboardOutlined />
+              <span className="flex h-8 w-8 items-center justify-center rounded-sm">
+                {/* <DashboardOutlined /> */}
+                <img src="favicon.png" alt="" />
               </span>
-              <span className="text-body-md-strong tracking-[-0.02em] text-ink">Edvanta</span>
+              <span className="text-body-md-strong tracking-[-0.02em] text-canvas">Edvanta</span>
             </Link>
 
             {/* Desktop link row */}
