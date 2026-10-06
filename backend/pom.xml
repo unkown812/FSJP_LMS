@@ -104,7 +104,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- Replace with your actual package structure and class name -->
-                    <mainClass>com.example.LmsApplication</mainClass>
+                    <mainClass>com.example.lms.LmsApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

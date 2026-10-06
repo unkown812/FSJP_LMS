@@ -19,7 +19,7 @@ build/
 # Dependency directories
 node_modules/
 
-# OS Files
+# OS Files.
 .DS_Store
 Thumbs.db
 
@@ -34,3 +34,4 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+*.vite
