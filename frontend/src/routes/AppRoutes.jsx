@@ -13,6 +13,8 @@ import LearningPage from '../pages/LearningPage';
 import QuizTakingPage from '../pages/QuizTakingPage';
 import ProfilePage from '../pages/ProfilePage';
 import NotFoundPage from '../pages/NotFoundPage';
+import PracticePage from '../pages/practice/PracticePage';
+import CoursePracticePage from '../pages/practice/CoursePracticePage';
 
 // Dashboards
 import LearnerDashboard from '../components/LearnerDashboard';
@@ -28,6 +30,8 @@ export const AppRoutes = () => {
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/courses" element={<CourseCatalogPage />} />
       <Route path="/courses/:id" element={<CourseDetailPage />} />
+      <Route path="/practice" element={<PracticePage />} />
+      <Route path="/courses/:courseId/practice" element={<CoursePracticePage />} />
 
       {/* Authenticated Learning Routes */}
       <Route
