@@ -53,10 +53,12 @@ export const Footer = ({ showSidebar = true }) => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2.5" aria-label="LMS Portal home">
-              <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary text-on-primary text-sm">
-                ◆
+              <span className="flex h-8 w-8 items-center justify-center rounded-sm text-sm">
+                <img src="favicon.png" alt="" />
               </span>
-              <span className="text-body-md-strong tracking-[-0.02em] text-ink">Edvanta</span>
+              <span className="text-body-md-strong tracking-[-0.02em] text-ink">
+                <img src="namebrand.png" height={100} width={160} alt="" />
+              </span>
             </Link>
             <p className="mt-4 max-w-xs text-caption text-body">
               Structured courses, rigorous assessment and verified certificates for learners,

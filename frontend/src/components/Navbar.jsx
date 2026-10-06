@@ -58,7 +58,7 @@ export const Navbar = ({ onToggleMenu }) => {
     }`;
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-blur no-print">
+    <header className="sticky top-0 z-40 w-full border-b border-hairline bg-canvas no-print">
       <div className="container-app">
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Left: menu trigger + wordmark */}
@@ -79,14 +79,14 @@ export const Navbar = ({ onToggleMenu }) => {
                 {/* <DashboardOutlined /> */}
                 <img src="favicon.png" alt="" />
               </span>
-              <span className="text-body-md-strong tracking-[-0.02em] text-canvas">Edvanta</span>
+              <span className="text-body-md-strong tracking-[-0.02em] text-ink">
+                <img src="namebrand.png" alt="" height={100} width={160} />
+              </span>
             </Link>
 
             {/* Desktop link row */}
             <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
-              <Link to="/courses" className={linkClass('/courses')}>
-                Explore Courses
-              </Link>
+              
               {isAuthenticated && role === ROLES.INSTRUCTOR && (
                 <Link
                   to="/instructor/courses/new"
